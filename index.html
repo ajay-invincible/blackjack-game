@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Blackjack Game</h1>
+            <p id="message-el">Want to play a round ?</p>
+            <div id="out-game">
+                <p class="player-name">Enter Your Name:</p>
+                <input type="text" placeholder="John Doe" id="player-name">
+                <button id="start-btn" onclick="startGame()">START GAME</button>
+            </div>
+            <div id="in-game">
+                <p id="cards-el">Cards :</p>
+                <p id="sum-el">Sum :</p>
+                <button id="draw-btn" onclick="drawCards()">DRAW CARDS</button>
+                <button id="new-btn" onclick="newCard()">NEW CARD</button>
+                <button id="restart-btn" onclick="restart()">RESTART</button>
+                <button id="exit-btn" onclick="exit()">EXIT</button>
+                <p id="player-el">PLAYER NAME : </p>
+            </div>
+            <div class="rules">
+                <h2 class="game-rule-heading">GAME RULES :-</h2>
+                <ol class="game-rules">
+                    <li>Player name is mandatory to play the game.</li>
+                    <li>You will <span class="imp-2">win</span> the game when you get <span class="imp-2">Blackjack</span>.</li>
+                    <li>To get <span class="imp-2">Blackjack</span> your card sum should be <span class="imp">exact 21</span>.</li>
+                    <li>If your card sum is <span class="imp">more than 21</span>, then you'll lose the game.</li>
+                    <li>If your card sum is <span class="imp">less than 21</span>, then you can still continue to draw new cards.</li>
+                    <li>After winning/losing you can restart game by clicking <span class="imp">RESTART</span> button</li>
+                    <li>To exit the game click on <span class="imp">EXIT</span> button</li>
+                </ol>
+            </div>
+        </div>
+        <script src="index2.js"></script>
+    </body>
+</html>
