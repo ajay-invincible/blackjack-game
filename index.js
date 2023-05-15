@@ -98,6 +98,16 @@ function checkSum() {
     messageEl.textContent = message
 }
 
+// to restart the game with same player
+function restart() {
+    isAlive = true
+    hasBlackJack = false
+    cardsEl.textContent = "Cards : "
+    sumEl.textContent = "Sum : "
+    document.getElementById("draw-btn").style.display = "block"
+    messageEl.textContent = "Draw Cards!"
+ }
+
 // draw a new card
 function newCard() {
     if(isAlive === true && hasBlackJack === false) {
@@ -108,13 +118,6 @@ function newCard() {
     }
 }
 
-// to restart the game with same player
-function restart() {
-   cardsEl.textContent = "Cards : "
-   sumEl.textContent = "Sum : "
-   document.getElementById("draw-btn").style.display = "block"
-   messageEl.textContent = "Draw Cards!"
-}
 
 // to exit the game
 function exit() {

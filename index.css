@@ -4,7 +4,7 @@ body {
     background-size: cover;
     color: white;
     font-weight: bold;
-    text-align: center;
+    text-align: center; 
 }
 
 .player-name, #cards-el, #sum-el {
@@ -44,7 +44,11 @@ input {
 }
 
 #in-game {
-    display: none;
+    display: none;       
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 button {
